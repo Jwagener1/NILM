@@ -1,0 +1,14 @@
+/*body {*/
+/*    margin: 0;*/
+/*}*/
+
+/*.form-control:focus {*/
+/*        box-shadow: 0 0 0 0.2rem rgba(255, 187, 51, 0.25);*/
+/*    }*/
+
+body{
+    background-color: black;
+}
+.checkbox {
+  column-count: 2;
+}
