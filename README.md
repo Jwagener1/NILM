@@ -1,2 +1,5 @@
 # NILM
-Design and implementation of a dual WiFI/cellular linked smart energy meter
+## Design and implementation of a dual WiFI/cellular linked smart energy meter.
+
+With the growing popularity of connected devices and services, and amidst consumers' rising concerns of re-sustainable energy usage, there has been a growing desire for more information about the energy consumers use. Current "smart" energy meters which are accessible to consumers are limited as they are only able to report the total amount of energy consumed by all the devices connected to the circuit. If a consumer wanted to measure the energy consumption per load on the same circuit simultaneously it would require the use of   multiple "smart" energy meters (one per load). The goal of this project is to design a single energy meter that can measure per device energy consumption on the same circuit when multiple loads are simultaneously in operation.
+The system will have to identify individual loads using the energy profile/fingerprint of the individual loads when multiple loads are simultaneously in operation. This will then be used to calculate the energy consumed per load. The energy consumption data will be accessible to a user via a web page accessible over WiFi or cellular interface.
