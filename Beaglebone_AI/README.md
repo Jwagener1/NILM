@@ -17,10 +17,15 @@ make
 sudo cp src/arm/am5729-beagleboneai.dtb /boot/dtbs/4.19.94-ti-r73/
 
 sudo cp src/arm/overlays/BBAI-PRUOUT_PRU1_0.dtbo /lib/firmware/
+
 sudo cp src/arm/overlays/BBAI-PRUOUT_PRU1_1.dtbo /lib/firmware/
+
 sudo cp src/arm/overlays/BBAI-PRUIN_PRU1_0.dtbo /lib/firmware/
+
 sudo cp src/arm/overlays/BBAI-PRUIN_PRU1_1.dtbo /lib/firmware/
+
 sudo cp src/arm/overlays/BONE-SPI0_0.dtbo /lib/firmware/
+
 sudo cp src/arm/overlays/BONE-SPI1_0.dtbo /lib/firmware/
 
 make clean 
@@ -30,12 +35,9 @@ nano /boot/uEnv.txt
 
 enable_uboot_overlays=1
 
-#uboot_overlay_addr2=/lib/firmware/BBAI-PRUIN_PRU1_0.dtbo
 uboot_overlay_addr3=/lib/firmware/BBAI-PRUIN_PRU1_1.dtbo
-#uboot_overlay_addr4=/lib/firmware/BBAI-PRUOUT_PRU1_0.dtbo
+
 uboot_overlay_addr5=/lib/firmware/BBAI-PRUOUT_PRU1_1.dtbo
-#uboot_overlay_addr6=/lib/firmware/BONE-SPI0_0.dtbo
-#uboot_overlay_addr7=/lib/firmware/BONE-SPI1_0.dtbo
 
 sudo reboot
 
