@@ -1,5 +1,5 @@
 # Setup the beaglebone AI
-udo apt update -y
+sudo apt update -y
 sudo apt upgrade -y
 sudo reboot
 
